@@ -1,0 +1,45 @@
+[versions]
+kotlin = "1.9.24"
+openrndr = "0.4.5-alpha3"
+orx = "0.4.5-alpha3"
+orsl = "0.4.5-alpha3"
+orml = "0.4.1"
+
+slf4j = "2.0.13"
+log4j = "2.23.1"
+jackson = "2.17.1"
+
+[libraries]
+kotlin-script-runtime = { group = "org.jetbrains.kotlin", name = "kotlin-script-runtime", version.ref = "kotlin" }
+
+slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+slf4j-nop = { group = "org.slf4j", name = "slf4j-nop", version.ref = "slf4j" }
+slf4j-simple = { group = "org.slf4j", name = "slf4j-simple", version.ref = "slf4j" }
+log4j-slf4j2 = { group = "org.apache.logging.log4j", name = "log4j-slf4j2-impl", version.ref = "log4j" }
+log4j-core = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j" }
+jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+jackson-json = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version.ref = "jackson" }
+
+orsl-shader-generator = { group = "org.openrndr.extra", name = "orsl-shader-generator", version.ref = "orsl" }
+orsl-extension-color = { group = "org.openrndr.extra", name = "orsl-extension-color", version.ref = "orsl" }
+orsl-extension-easing = { group = "org.openrndr.extra", name = "orsl-extension-easing", version.ref = "orsl" }
+orsl-extension-gradient = { group = "org.openrndr.extra", name = "orsl-extension-gradient", version.ref = "orsl" }
+orsl-extension-noise = { group = "org.openrndr.extra", name = "orsl-extension-noise", version.ref = "orsl" }
+orsl-extension-pbr = { group = "org.openrndr.extra", name = "orsl-extension-pbr", version.ref = "orsl" }
+orsl-extension-raymarching = { group = "org.openrndr.extra", name = "orsl-extension-raymarching", version.ref = "orsl" }
+orsl-extension-sdf = { group = "org.openrndr.extra", name = "orsl-extension-sdf", version.ref = "orsl" }
+
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.8.0" }
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging", version = "6.0.9" }
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+jsoup = { group = "org.jsoup", name = "jsoup", version = "1.17.1" }
+gson = { group = "com.google.code.gson", name = "gson", version = "2.10.1" }
+csv = { group = "com.github.doyaaaaaken", name = "kotlin-csv-jvm", version = "1.9.2" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
+runtime = { id = "org.beryx.runtime", version = "1.13.1" }
+gitarchive-tomarkdown = { id = "org.openrndr.extra.gitarchiver.tomarkdown", version.ref = "orx" }
+versions = { id = "com.github.ben-manes.versions", version = "0.51.0" }
+
